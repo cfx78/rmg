@@ -1,8 +1,8 @@
 import Sidebar from './components/Sidebar/Sidebar';
 import About from './pages/About/About';
+import Artists from './pages/Artists/Artists';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
-import Links from './pages/Links/Links';
 
 function App() {
 	return (
@@ -15,7 +15,7 @@ function App() {
 					<div className="wrapper">
 						<Home />
 						<About />
-						<Links />
+						<Artists />
 						<Contact />
 					</div>
 				</div>

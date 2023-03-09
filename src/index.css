@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ?font-family: 'Bitter', serif;
+?font-family: 'Ceviche One', cursive;
+?font-family: 'Concert One', cursive;
+?font-family: 'Raleway', sans-serif;
+?font-family: 'Ultra', serif; */
+
 body {
 	background-color: #0d1313;
 	color: white;
