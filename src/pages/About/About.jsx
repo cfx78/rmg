@@ -1,9 +1,14 @@
 import './About.css';
+import { motion } from 'framer-motion';
 
 const About = () => {
 	return (
 		<section id="About" className="About text-woodsmoke-50">
-			<div className="h-screen  flex flex-col justify-center items-center  relative text-5xl">
+			<motion.div
+				initial={{ scale: 0 }}
+				transition={{ type: 'tween', duration: 0.5 }}
+				whileInView={{ scale: 1 }}
+				className="h-screen  flex flex-col justify-center items-center  relative text-5xl">
 				<blockquote className="mb-20 phrase text-center italic ">
 					"You don't just hear it, you feel it"
 				</blockquote>
@@ -25,7 +30,7 @@ const About = () => {
 					provident! Assumenda voluptatem ex autem nemo ipsa, tempora
 					quaerat?
 				</p>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

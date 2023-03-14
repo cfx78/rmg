@@ -1,6 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
-
+import { motion } from 'framer-motion';
 export default function Modal(props) {
 	let [isOpen, setIsOpen] = useState(false);
 
@@ -14,14 +14,23 @@ export default function Modal(props) {
 
 	return (
 		<>
-			<div className="fixed flex items-center justify-center">
+			<motion.div
+				initial={props.yInit}
+				transition={{ type: 'tween', duration: 0.5 }}
+				whileInView={props.yView}
+				className="flex flex-col justify-center items-center gap-10">
+				<img
+					src={props.img}
+					className="rounded-xl border-4 w-96 h-96"
+				/>
+
 				<button
 					type="button"
 					onClick={openModal}
-					className="px-4 py-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-					Open dialog
+					className="px-4 py-2 text-sm font-medium text-white bg-woodsmoke-200 rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+					{props.name}
 				</button>
-			</div>
+			</motion.div>
 
 			<Transition appear show={isOpen} as={Fragment}>
 				<Dialog
@@ -59,6 +68,10 @@ export default function Modal(props) {
 									{props.name}
 								</Dialog.Title>
 								<div className="mt-24 space-y-44">
+									<img
+										src={props.img}
+										className="float-left  w-64 p-3 rounded-3xl"
+									/>
 									<p className="text-lg">
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Debitis nesciunt
@@ -92,13 +105,19 @@ export default function Modal(props) {
 										rerum esse.
 									</p>
 									<div className="artists-links flex justify-around gap-6">
-										<a href="">
+										<a
+											href="https://open.spotify.com/artist/1nW44pBv3rPmyfW3fd3pm2"
+											target="_blank">
 											<i class="fa-brands fa-spotify"></i>
 										</a>
-										<a href="">
+										<a
+											href="https://music.apple.com/us/artist/mtee-taylor/1481915107"
+											target="_blank">
 											<i class="fa-brands fa-apple"></i>
 										</a>
-										<a href="">
+										<a
+											href="https://www.youtube.com/channel/UC2JAKuVrWB6ns5qw_6dXUmQ?app=desktop"
+											target="_blank">
 											<i class="fa-brands fa-youtube"></i>
 										</a>
 									</div>
