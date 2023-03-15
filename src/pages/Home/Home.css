@@ -7,3 +7,14 @@
 .rmg--home p {
 	font-family: 'Bitter', serif;
 }
+
+@media only screen and (max-width: 600px) {
+	.rmg--home p {
+		font-size: 4rem;
+	}
+
+	.Home h1 {
+		font-size: 5.5rem;
+		margin-right: 0.25rem;
+	}
+}

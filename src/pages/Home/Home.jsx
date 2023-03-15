@@ -6,24 +6,24 @@ const Home = () => {
 		<section
 			id="Home"
 			className="Home text-woodsmoke-50 relative flex flex-col justify-center gap-32  items-center ">
-			<div className="rmg--home space-y-20 max-h-[75vh] text-7xl">
+			<div className="rmg--home space-y-20 sm:max-h-[75vh] sm:text-7xl">
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.5 }}>
-					<h1 className="text-[7.25rem] lg:text-[11rem]">R</h1>eal
+					<h1 className=" sm:text-[11rem]">R</h1>eal
 				</motion.p>
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 1.5 }}>
-					<h1 className="text-[7.25rem] lg:text-[11rem]">M</h1>uziq
+					<h1 className=" sm:text-[11rem]">M</h1>uziq
 				</motion.p>
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 2.5 }}>
-					<h1 className="text-[7.25rem] lg:text-[11rem]">G</h1>roup
+					<h1 className=" sm:text-[11rem]">G</h1>roup
 				</motion.p>
 			</div>
 		</section>

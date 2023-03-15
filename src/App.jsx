@@ -7,7 +7,7 @@ import Home from './pages/Home/Home';
 function App() {
 	return (
 		<div className="App w-screen h-screen grid grid-cols-10 ">
-			<header className="col-span-1 h-[100vh] ">
+			<header className="col-span-1 sm:h-[100vh] ">
 				<Sidebar />
 			</header>
 			<main className="col-span-9 ">

@@ -1,5 +1,24 @@
 a {
 	font-family: 'Concert One', cursive;
 	font-weight: 700;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.logo img {
+		width: 10vw;
+	}
+	.logo {
+		max-width: 3.75rem;
+		margin-bottom: 1rem;
+	}
+	.Sidebar {
+		height: 90vh;
+		margin-right: 1rem;
+	}
+
+	a {
+		font-size: 0.85rem;
+		padding-top: 3.5rem;
+	}
 }

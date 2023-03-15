@@ -8,11 +8,11 @@ const About = () => {
 				initial={{ scale: 0 }}
 				transition={{ type: 'tween', duration: 0.5 }}
 				whileInView={{ scale: 1 }}
-				className="h-screen  flex flex-col justify-center items-center  relative text-5xl">
-				<blockquote className="mb-20 phrase text-center italic ">
+				className="sm:h-screen  flex flex-col justify-center items-center  relative sm:text-5xl">
+				<blockquote className="sm:mb-20 phrase text-center italic ">
 					"You don't just hear it, you feel it"
 				</blockquote>
-				<p className=" text-2xl max-w-3xl">
+				<p className=" sm:text-2xl sm:max-w-3xl">
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 					Quod dolorem eveniet hic necessitatibus. Corporis id magnam,
 					suscipit reprehenderit sunt dolorum aut alias consectetur,
