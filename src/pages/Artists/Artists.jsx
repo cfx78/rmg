@@ -1,9 +1,9 @@
 import Modal from '../../components/Modal';
 import './Artists.css';
-import mtee from '../../../public/assets/mtee_43.jpg';
-import blackLogo from '../../../public/assets/Real_Muziq_Group_Logo_Black.png';
-import blueLogo from '../../../public/assets/Real_Muziq_Group_Logo.jpg';
-import coco from '../../../public/assets/cc_2.jpg';
+import mtee from '../../img/mtee_43.png';
+import blackLogo from '../../img/Real_Muziq_Group_Logo_Black.png';
+import blueLogo from '../../img/Real_Muziq_Group_Logo.jpg';
+import coco from '../../img/cc_2.png';
 const Artists = () => {
 	return (
 		<section id="Artists" className="Artists">

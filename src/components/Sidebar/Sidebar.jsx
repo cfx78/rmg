@@ -1,12 +1,12 @@
 import './Sidebar.css';
-
+import whiteLogo from '../../img/Real_Muziq_Group_Logo_Black.png';
 const Sidebar = () => {
 	return (
 		<div className="Sidebar sm:h-screen sm:max-w-min text-woodsmoke-50 text-center flex flex-col justify-center items-center fixed z-30">
 			<div className="logo  h-1/6 hover:bg-woodsmoke-50 w-[5.35rem] duration-300 transition ease-in-out">
 				<img
 					className=" mt-16 mx-auto max-w-[4rem] rounded-full row-span-1 border-b-4"
-					src="public\assets\Real_Muziq_Group_Logo_Black.png"
+					src={whiteLogo}
 					alt="rmg logo"
 				/>
 			</div>
