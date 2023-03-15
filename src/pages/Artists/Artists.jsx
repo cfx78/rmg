@@ -7,28 +7,28 @@ const Artists = () => {
 			<div className="artists--modals grid grid-cols-2 max-w-[100vw] h-full place-items-center mr-9 sm:mr-0">
 				<Modal
 					name="MTee Taylor"
-					img="src\assets\mtee_43.JPG"
+					img="public\assets\mtee_43.JPG"
 					yInit={{ y: -200 }}
 					yView={{ y: 0 }}
 				/>
 
 				<Modal
 					name="Wop on The Beat"
-					img="src\assets\Real_Muziq_Group_Logo_Black.png"
+					img="public\assets\Real_Muziq_Group_Logo_Black.png"
 					yInit={{ y: -200 }}
 					yView={{ y: 0 }}
 				/>
 
 				<Modal
 					name="Cocoa"
-					img="src\assets\cc_2.JPG"
+					img="public\assets\cc_2.JPG"
 					yInit={{ y: 100 }}
 					yView={{ y: 0 }}
 				/>
 
 				<Modal
 					name="OchoFrom60"
-					img="src\assets\Real_Muziq_Group_Logo.jpg"
+					img="public\assets\Real_Muziq_Group_Logo.jpg"
 					yInit={{ y: 100 }}
 					yView={{ y: 0 }}
 				/>

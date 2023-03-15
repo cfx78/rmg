@@ -6,7 +6,7 @@ const Sidebar = () => {
 			<div className="logo  h-1/6 hover:bg-woodsmoke-50 w-[5.35rem] duration-300 transition ease-in-out">
 				<img
 					className=" mt-16 mx-auto max-w-[4rem] rounded-full row-span-1 border-b-4"
-					src="src\assets\Real_Muziq_Group_Logo_Black.png"
+					src="public\assets\Real_Muziq_Group_Logo_Black.png"
 					alt="rmg logo"
 				/>
 			</div>
